@@ -1,0 +1,22 @@
+html, body, .wrapper {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@import "variables";
+
+.width-container{
+  max-width: $container-max-widths;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@import "header";
+@import "buttons";
+@import "navbar";
+@import "mixins";
+@import "media-481";
+@import "media-993";

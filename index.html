@@ -9,15 +9,87 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
     <script src="js/script.min.js"></script>
     <script src="js/vendor.min.js"></script>
+
 
 </head>
 <body>
 <div class="wrapper">
-    <header>
+    <header class="header">
+        <div class="header__container">
+            <div class="header-background__container">
+                <div class="header__bar  width-container">
+                    <a class="header__logo" href="#">
+                        <div class="header__logo-bg"></div>
+                        <span class="header__logo__text">ForkIO</span>
+                    </a>
 
+                    <nav class="nav">
+                        <ul class="nav__list hide">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    About Fork
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Buying Options
+                                </a>
+                            </li>
+
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="header-btn buy-now">
+                        Buy Now
+                    </button>
+
+                    <button class="header__bar__btn-bars">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <button class="header__bar__btn-bars hide">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="header__description width-container">
+                    <p class="header__title">
+                        Fork App
+                    </p>
+
+                    <p class="header__subtitle">
+                        A Real Gamechanger In The World Of Web-Development
+                    </p>
+
+                    <p class="header__subtitle__ver">
+                        v. 2.8 For Mac and Windows
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="header__download width-container">
+            <button class="header-btn download-btn">
+                Download For Free Now
+            </button>
+
+            <p>
+                Unlimited 30-Days Trial Period
+            </p>
+        </div>
     </header>
 
     <main>
