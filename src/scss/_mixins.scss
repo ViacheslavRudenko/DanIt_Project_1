@@ -1,0 +1,20 @@
+@mixin radius-border-right {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+@mixin radius-border-left {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+@mixin pricing-box-pseudo-element {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //border: 2px #8D81AC solid;
+  border: 2px rgba(125,110,140,0.9) solid;
+  width: 60px;
+  height: 2px;
+}

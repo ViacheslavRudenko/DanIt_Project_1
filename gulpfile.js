@@ -49,7 +49,7 @@ const cleanDist = () =>(
 
 const htmlBuild = () => (
     gulp.src(path.src.html)
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        // .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(path.dist.html))
         .pipe(browserSync.stream())
 );
