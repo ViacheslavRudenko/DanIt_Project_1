@@ -1,0 +1,92 @@
+@media screen and (min-width: 481px) {
+  @import "variables";
+
+  //--------------------HEADER--------------------//
+
+  .header {
+    &__bar {
+      padding: 24px 20px 42px;
+
+      &__btn-bars {
+        display: none;
+      }
+    }
+
+    &__logo__text {
+      display: inline-block;
+    }
+
+    &__title {
+      font-size: 72px;
+      line-height: 72px;
+    }
+
+    &__subtitle {
+      font-family: $fontLato;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__download {
+      bottom: 34px;
+
+      & > p {
+        margin-top: 28px;
+      }
+    }
+  }
+
+  .download-btn {
+    font-size: 21px;
+    padding: 31px 61px;
+  }
+
+  //--------------------NAVBAR--------------------//
+
+  .nav {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    top: 75px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+
+    &__item {
+      border: none;
+      padding: 0;
+      margin: 0 2vw;
+    }
+
+    &__link {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #8D81AC;
+      text-align: center;
+
+      &:focus {
+        color: white;
+        padding-bottom: 7px;
+        border-bottom: 4px solid white;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  //--------------------Main--------------------//
+
+
+  .talking-about-fork__title {
+    font-size: 42px;
+    padding-top: 80px;
+  }
+}

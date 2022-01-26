@@ -12,14 +12,14 @@ html, body, .wrapper {
   box-sizing: border-box;
 }
 
-.subscription-pricing__purchase-button, .header-btn {
+.header-btn {
   color: white;
   position: relative;
 }
-.subscription-pricing__purchase-button:focus, .header-btn:focus {
+.header-btn:focus {
   outline: none;
 }
-.subscription-pricing__purchase-button:active, .header-btn:active {
+.header-btn:active {
   top: 2px;
   box-sizing: border-box;
   border: 2px solid #8D81AC;
@@ -55,20 +55,6 @@ html, body, .wrapper {
 .download-btn {
   font-size: 18px;
   padding: 24px 29px;
-}
-
-.subscription-pricing__purchase-button {
-  position: relative;
-  top: 0;
-  left: 0;
-  font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px 37px;
-  text-transform: uppercase;
-  line-height: 20px;
-  font-size: 20px;
-  border: 2px transparent solid;
-  border-radius: 30px;
 }
 
 .header {
@@ -202,14 +188,130 @@ html, body, .wrapper {
   display: none;
 }
 
-.header-btn, .subscription-pricing__purchase-button {
+@media screen and (min-width: 481px) {
+  .header__bar {
+    padding: 24px 20px 42px;
+  }
+  .header__bar__btn-bars {
+    display: none;
+  }
+  .header__logo__text {
+    display: inline-block;
+  }
+  .header__title {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .header__subtitle {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .header__download {
+    bottom: 34px;
+  }
+  .header__download > p {
+    margin-top: 28px;
+  }
+
+  .download-btn {
+    font-size: 21px;
+    padding: 31px 61px;
+  }
+
+  .nav {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    top: 75px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .nav__item {
+    border: none;
+    padding: 0;
+    margin: 0 2vw;
+  }
+  .nav__link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #8D81AC;
+    text-align: center;
+  }
+  .nav__link:focus {
+    color: white;
+    padding-bottom: 7px;
+    border-bottom: 4px solid white;
+  }
+  .nav__link:focus::before {
+    display: none;
+  }
+
+  .talking-about-fork__title {
+    font-size: 42px;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .header__bar {
+    background: transparent;
+    padding: 30px 16px;
+  }
+  .header__logo:hover {
+    cursor: pointer;
+  }
+  .header__logo:hover .header__logo-bg {
+    background: url("../img/logos/header-logo-sprites.png") -10px -10px;
+    transform: rotate(-360deg);
+    transition: 0.5s;
+  }
+  .header__logo:hover .header__logo__text {
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+  }
+  .header-btn:hover {
+    background-color: white;
+    color: #8D81AC;
+    border: 2px solid #8D81AC;
+  }
+  .header .buy-now {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .nav {
+    position: inherit;
+    width: auto;
+    padding: 12px 0;
+    margin: 0 43px 0 auto !important;
+  }
+  .nav__item {
+    margin: 0 23px;
+  }
+  .nav__link:hover {
+    transition: all 1s;
+  }
+
+  .talking-about-fork__title {
+    padding-top: 110px;
+    font-size: 48px;
+  }
+}
+.header-btn {
   color: white;
   position: relative;
 }
-.header-btn:focus, .subscription-pricing__purchase-button:focus {
+.header-btn:focus {
   outline: none;
 }
-.header-btn:active, .subscription-pricing__purchase-button:active {
+.header-btn:active {
   top: 2px;
   box-sizing: border-box;
   border: 2px solid #8D81AC;
@@ -245,20 +347,6 @@ html, body, .wrapper {
 .download-btn {
   font-size: 18px;
   padding: 24px 29px;
-}
-
-.subscription-pricing__purchase-button {
-  position: relative;
-  top: 0;
-  left: 0;
-  font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px 37px;
-  text-transform: uppercase;
-  line-height: 20px;
-  font-size: 20px;
-  border: 2px transparent solid;
-  border-radius: 30px;
 }
 
 .nav {
@@ -309,6 +397,123 @@ html, body, .wrapper {
   width: 8px;
   left: -35px;
   top: -11px;
+}
+
+@media screen and (min-width: 481px) {
+  .header__bar {
+    padding: 24px 20px 42px;
+  }
+  .header__bar__btn-bars {
+    display: none;
+  }
+  .header__logo__text {
+    display: inline-block;
+  }
+  .header__title {
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .header__subtitle {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .header__download {
+    bottom: 34px;
+  }
+  .header__download > p {
+    margin-top: 28px;
+  }
+
+  .download-btn {
+    font-size: 21px;
+    padding: 31px 61px;
+  }
+
+  .nav {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    top: 75px;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .nav__item {
+    border: none;
+    padding: 0;
+    margin: 0 2vw;
+  }
+  .nav__link {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #8D81AC;
+    text-align: center;
+  }
+  .nav__link:focus {
+    color: white;
+    padding-bottom: 7px;
+    border-bottom: 4px solid white;
+  }
+  .nav__link:focus::before {
+    display: none;
+  }
+
+  .talking-about-fork__title {
+    font-size: 42px;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .header__bar {
+    background: transparent;
+    padding: 30px 16px;
+  }
+  .header__logo:hover {
+    cursor: pointer;
+  }
+  .header__logo:hover .header__logo-bg {
+    background: url("../img/logos/header-logo-sprites.png") -10px -10px;
+    transform: rotate(-360deg);
+    transition: 0.5s;
+  }
+  .header__logo:hover .header__logo__text {
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+  }
+  .header-btn:hover {
+    background-color: white;
+    color: #8D81AC;
+    border: 2px solid #8D81AC;
+  }
+  .header .buy-now {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .nav {
+    position: inherit;
+    width: auto;
+    padding: 12px 0;
+    margin: 0 43px 0 auto !important;
+  }
+  .nav__item {
+    margin: 0 23px;
+  }
+  .nav__link:hover {
+    transition: all 1s;
+  }
+
+  .talking-about-fork__title {
+    padding-top: 110px;
+    font-size: 48px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
