@@ -1,5 +1,4 @@
 @media screen and (min-width: 993px) {
-
   //--------------------HEADER--------------------//
 
   .header {
@@ -12,9 +11,9 @@
       cursor: pointer;
 
       & .header__logo-bg {
-        background: url('../img/logos/header-logo-sprites.png') -10px -10px;
+        background: url("../img/logos/header-logo-sprites.png") -10px -10px;
         transform: rotate(-360deg);
-        transition: .5s;
+        transition: 0.5s;
       }
 
       & .header__logo__text {
@@ -26,8 +25,8 @@
 
     &-btn:hover {
       background-color: white;
-      color: #8D81AC;
-      border: 2px solid #8D81AC;
+      color: #8d81ac;
+      border: 2px solid #8d81ac;
     }
 
     .buy-now {
@@ -44,7 +43,7 @@
     padding: 12px 0;
     margin: 0 43px 0 auto !important;
 
-    &__item{
+    &__item {
       margin: 0 23px;
     }
 
@@ -54,17 +53,49 @@
       }
     }
   }
+  //--------------------Main--------------------//
+  //---------------Revolutionary editor-----------//
 
-  //--------------------MAIN--------------------//
+  .review p {
+    max-width: 860px;
+    margin: 0 auto;
+  }
 
-
+  .advantages {
+    background: $advantagesBackground;
+    .advantages-box {
+      margin: 0 auto;
+      max-width: 1260px;
+      display: grid;
+      grid-column-gap: 50px;
+      grid-template-columns: 560px 1fr;
+      grid-template-rows: 70px 1fr;
+      grid-template-areas:
+        "content title"
+        "content img";
+      h4 {
+        text-align: left;
+        grid-area: title;
+      }
+      .advantages-box-content {
+        grid-area: content;
+        .advantages-box-item {
+          padding: 25px 0;
+          &:first-of-type {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+    &__img {
+      height: 500px;
+      background-size: contain;
+      grid-area: img;
+    }
+  }
   //------------------talking about fork----------//
   .talking-about-fork__title {
     padding-top: 110px;
     font-size: 48px;
   }
-
-
 }
-
-

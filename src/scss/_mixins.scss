@@ -6,3 +6,22 @@
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
+
+@mixin lato-font {
+  font-family: $fontLato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+@mixin review-border {
+  border: 1px solid #d5d5d5;
+}
+@mixin pc-font-title {
+  font-size: 42px;
+  line-height: 42px;
+}
+@mixin img-position {
+  background-size: cover;
+  background-repeat: no-repeat;
+}

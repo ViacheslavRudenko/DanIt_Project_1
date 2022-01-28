@@ -1,5 +1,6 @@
 @media screen and (min-width: 481px) {
   @import "variables";
+  @import "mixins";
 
   //--------------------HEADER--------------------//
 
@@ -67,7 +68,7 @@
       font-weight: bold;
       font-size: 16px;
       line-height: 18px;
-      color: #8D81AC;
+      color: #8d81ac;
       text-align: center;
 
       &:focus {
@@ -83,8 +84,40 @@
   }
 
   //--------------------Main--------------------//
+  //---------------Revolutionary editor-----------//
 
-
+  .review {
+    h2 {
+      @include pc-font-title;
+    }
+    p {
+      font-size: 21px;
+      line-height: 32px;
+    }
+    .review-box {
+      max-width: 400px;
+    }
+  }
+  .advantages {
+    .advantages-box {
+      h4 {
+        @include pc-font-title;
+      }
+      .advantages-box-item {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        &__content {
+          text-align: left;
+        }
+      }
+      &__img {
+        margin-left: 0;
+        background-size: cover;
+        background-position: right;
+      }
+    }
+  }
+  //----------People Are Talking About Fork------//
   .talking-about-fork__title {
     font-size: 42px;
     padding-top: 80px;

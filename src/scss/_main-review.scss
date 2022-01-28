@@ -1,0 +1,97 @@
+@import "variables";
+@import "mixins";
+
+main {
+  @include lato-font;
+}
+///Revolutionary editor
+.review {
+  text-align: center;
+  width: 100vw;
+  padding: 0 10px 70px;
+
+  h2 {
+    padding: 50px 0 25px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    color: #635c73;
+    text-transform: uppercase;
+  }
+  p {
+    color: $mainColor;
+  }
+  .review-box {
+    margin: 0 auto;
+    padding: 36px 0 0;
+    max-width: 265px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .review-box-item {
+      display: flex;
+      padding: 10px 5px;
+      &__btn {
+        @include review-border;
+        background: #e5e5e5;
+        font-weight: bold;
+        padding-bottom: 4px;
+        display: flex;
+        padding: 6px 10px 4px 4px;
+        border-radius: 3px 0 0 3px;
+        svg {
+          width: 100%;
+          padding: 0 5px 0 8px;
+        }
+      }
+      &__calc {
+        @include review-border;
+        border-left: none;
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 0 3px 3px 0;
+      }
+    }
+  }
+}
+
+///Advantages
+//<Here is what you get>
+.advantages {
+  position: relative;
+  padding: 94px 10px 33px;
+  text-align: center;
+  .advantages-box {
+    h4 {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 44px;
+      color: #8d81ac;
+    }
+    .advantages-box-item {
+      padding: 30px 0;
+      &__content {
+        h6 {
+          font-size: 16px;
+          padding-bottom: 14px;
+          color: $mainColor;
+        }
+        p {
+          color: #848e97;
+        }
+      }
+      &__img {
+        vertical-align: center;
+        padding-bottom: 26px;
+      }
+    }
+  }
+  &__img {
+    margin-left: -10px;
+    margin-right: -10px;
+    background-image: url(../img/mainBoxImages/WhatYouGet/editor.png);
+    background-position: left;
+    height: 380px;
+    @include img-position;
+  }
+}
