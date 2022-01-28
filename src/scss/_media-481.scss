@@ -110,11 +110,12 @@
           text-align: left;
         }
       }
-      &__img {
-        margin-left: 0;
-        background-size: cover;
-        background-position: right;
-      }
+    }
+    &__img {
+      margin-left: 0;
+      min-height: 520px;
+      background-size: contain;
+      background-position: right;
     }
   }
   //----------People Are Talking About Fork------//
