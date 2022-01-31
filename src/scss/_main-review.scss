@@ -8,7 +8,8 @@ main {
 .review {
   text-align: center;
   width: 100vw;
-  padding: 0 10px 70px;
+  padding-bottom: 70px;
+  @include contentPading;
 
   h2 {
     padding: 50px 0 25px;
@@ -21,14 +22,12 @@ main {
   p {
     color: $mainColor;
   }
-  .review-box {
+  &-box {
     margin: 0 auto;
     padding: 36px 0 0;
     max-width: 265px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .review-box-item {
+    @include flex;
+    &-item {
       display: flex;
       padding: 10px 5px;
       &__btn {
@@ -59,16 +58,17 @@ main {
 //<Here is what you get>
 .advantages {
   position: relative;
-  padding: 94px 10px 33px;
+  padding: 94px 0 33px;
+  @include contentPading;
   text-align: center;
-  .advantages-box {
+  &-box {
     h4 {
       font-weight: bold;
       font-size: 42px;
       line-height: 44px;
       color: #8d81ac;
     }
-    .advantages-box-item {
+    &-item {
       padding: 30px 0;
       &__content {
         h6 {
@@ -81,7 +81,6 @@ main {
         }
       }
       &__img {
-        vertical-align: center;
         padding-bottom: 26px;
       }
     }
