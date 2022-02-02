@@ -19,7 +19,7 @@
       & .header__logo__text {
         color: white;
         text-decoration: none;
-        transition: all 1s;
+        transition: all .5s;
       }
     }
 
@@ -27,6 +27,7 @@
       background-color: white;
       color: #8d81ac;
       border: 2px solid #8d81ac;
+      transition: all .5s;
     }
 
     .buy-now {
@@ -49,7 +50,7 @@
 
     &__link {
       &:hover {
-        transition: all 1s;
+        transition: all .5s;
       }
     }
   }
@@ -98,6 +99,13 @@
   .talking-about-fork__title {
     padding-top: 110px;
     font-size: 48px;
+  }
+  .talking-about-fork__review {
+    max-width: 1200px;
+    display: grid;
+    grid-row-gap: 100px;
+    grid-template-columns: repeat(3, minmax(331px, 400px));
+    grid-template-rows: repeat(2, 1fr);
   }
 
   //---------Fork Subscription Pricing-------------//

@@ -55,14 +55,13 @@ const htmlBuild = () =>
     .pipe(browserSync.stream());
 
 const scssBuild = () =>
-  gulp
-    .src("src/scss/styles.scss")
-    .pipe(concat("styles.min.css"))
-    .pipe(sass().on("error", sass.logError))
-    .pipe(autoprefixer(["> 0.01%", "last 100 versions"]))
-    .pipe(cleanCSS())
+  gulp.src('src/scss/styles.scss')
+    .pipe(concat('styles.min.css'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer(['> 0.01%', 'last 100 versions']))
+    // .pipe(cleanCSS())
     .pipe(gulp.dest(path.dist.css))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
 
 const jsBuild = () =>
   gulp

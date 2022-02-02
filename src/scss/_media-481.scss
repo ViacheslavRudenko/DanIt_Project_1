@@ -70,11 +70,11 @@
       line-height: 18px;
       color: #8d81ac;
       text-align: center;
+      border: none;
 
       &:focus {
         color: white;
-        padding-bottom: 7px;
-        border-bottom: 4px solid white;
+        border: none;
 
         &::before {
           display: none;
@@ -123,6 +123,9 @@
   .talking-about-fork__title {
     font-size: 42px;
     padding-top: 80px;
+  }
+  .paragraph-between-boxes:after{
+    max-width: 60%;
   }
 
   //---------Fork Subscription Pricing-------------//

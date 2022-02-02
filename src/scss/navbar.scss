@@ -20,7 +20,7 @@
   &__item {
     display: inline-block;
     text-align: left;
-
+    white-space: nowrap;
     padding: 29px 0 21px 35px;
   }
 
@@ -31,12 +31,17 @@
     line-height: 26px;
     color: #FFFFFF;
     border-bottom: 3px solid #383d41;
+    outline: none;
     width: 100%;
     height: 100%;
 
     &:hover{
       text-decoration: none;
       color: #FFFFFF;
+    }
+
+    &:visited{
+      outline: none;
     }
 
     &:focus {
