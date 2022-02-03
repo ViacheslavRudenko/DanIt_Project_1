@@ -94,10 +94,10 @@
   //---------------Revolutionary editor-----------//
 
   .review {
-    h2 {
-      @include pc-font-title;
+    &__title {
+      @include medium-font-title;
     }
-    p {
+    &__text {
       font-size: 21px;
       line-height: 32px;
     }
@@ -127,7 +127,7 @@
   }
   //----------People Are Talking About Fork------//
   .talking-about-fork__title {
-    font-size: 42px;
+    @include medium-font-title;
     padding: 87px 0;
   }
   .talking-about-fork__paragraph-between-boxes:after {
@@ -136,6 +136,7 @@
 
   //---------Fork Subscription Pricing-------------//
   .price {
+    padding: 94px 10px;
     padding-bottom: 94px;
     &__title {
       @include medium-font-title;

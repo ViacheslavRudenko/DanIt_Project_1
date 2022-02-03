@@ -8,13 +8,12 @@ main {
 .review {
   text-align: center;
   padding-bottom: 70px;
-  @include contentPading;
   &__title {
     padding: 50px 0 25px;
     font-weight: bold;
     font-size: 26px;
     line-height: 28px;
-    color: #635c73;
+    color: $reviewFont;
     text-transform: uppercase;
   }
   &__text {
@@ -57,15 +56,12 @@ main {
 .advantages {
   position: relative;
   padding: 94px 0 33px;
-  @include contentPading;
   text-align: center;
-  &__box {
-    h4 {
-      font-weight: bold;
-      font-size: 42px;
-      line-height: 44px;
-      color: #8d81ac;
-    }
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #8d81ac;
   }
   &-item {
     padding: 30px 0;

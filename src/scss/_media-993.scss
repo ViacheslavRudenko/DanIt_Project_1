@@ -115,7 +115,7 @@
   //------------------talking about fork----------//
   .talking-about-fork__title {
     padding: 108px 0 82px;
-    font-size: 48px;
+    @include pc-font-title;
   }
   .talking-about-fork__review {
     max-width: 1200px;
