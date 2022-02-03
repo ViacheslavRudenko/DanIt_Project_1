@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,18 +21,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/script.min.js"></script>
+
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container">
-<!--          <div class="header-background__container">-->
-            <div class="header__bar width-container">
+
+        <div class="header__bar width-container">
               <a class="header__logo" href="#">
                 <div class="header__logo-bg"></div>
-                <span class="header__logo__text">ForkIO</span>
+                <span class="header__logo-text">ForkIO</span>
               </a>
 
               <nav class="nav">
@@ -57,18 +54,25 @@
                 </ul>
               </nav>
 
-              <button class="header-btn buy-now">Buy Now</button>
+              <button class="basic-btn">Buy Now</button>
 
-              <button class="header__bar__btn-bars">
-                <i class="fas fa-bars"></i>
-              </button>
+<!--              <button class="header__bar__btn-bars">-->
+<!--                <i class="fas fa-bars"></i>-->
+<!--              </button>-->
 
-              <button class="header__bar__btn-bars hide">
-                <i class="fas fa-times"></i>
-              </button>
+<!--              <button class="header__bar__btn-bars hide">-->
+<!--                <i class="fas fa-times"></i>-->
+<!--              </button>-->
+
+
+              <div class="menu-btn">
+                <div class="menu-btn__burger">
+                </div>
+              </div>
+
             </div>
 
-            <div class="header__description width-container">
+        <div class="header__description width-container">
               <p class="header__title">Fork App</p>
 
               <p class="header__subtitle">
@@ -77,12 +81,11 @@
 
               <p class="header__subtitle__ver">v. 2.8 For Mac and Windows</p>
             </div>
-<!--          </div>-->
-        </div>
-        <div class="header__download width-container">
-          <button class="header-btn download-btn">Download For Free Now</button>
 
-          <p>Unlimited 30-Days Trial Period</p>
+        <div class="header__download width-container">
+          <button class="basic-btn download-btn">Download For Free Now</button>
+
+          <p class="header__secondary-text">Unlimited 30-Days Trial Period</p>
         </div>
       </header>
 
@@ -158,6 +161,7 @@
             </div>
           </div>
         </section>
+
         <!-- Here is what you get -->
         <section class="advantages">
           <div class="advantages-box">
@@ -232,60 +236,67 @@
             <div class="advantages__img"></div>
           </div>
         </section>
-        <div class="talking-about-fork-container">
-          <div class="talking-about-fork__section">
-          <p class="talking-about-fork__title">People Are Talking About Fork</p>
-          <div class="talking-about-fork__review">
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/SmashingMagazine.png" alt=""></div>
-              <p class="box-review__description">
-                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
-              </p>
+
+        <!-- People Are Talking About Fork -->
+        <section class="talking-about-fork">
+          <div class="talking-about-fork__container width-container">
+            <p class="talking-about-fork__title">People Are Talking About Fork</p>
+
+            <div class="talking-about-fork__review">
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/SmashingMagazine.png" alt=""></div>
+
+                <p class="talking-about-fork__description-box-review">
+                  Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                  Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+                </p>
+              </div>
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/Codrops.png" alt=""></div>
+                <p class="talking-about-fork__description-box-review">Donec euismod dolor ut ultricies consequat.
+                  Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
+                </p>
+              </div>
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/W.png" alt=""></div>
+                <p class="talking-about-fork__description-box-review">In efficitur in velit et tempus. Duis nec
+                  odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus
+                  auctor felis ac vehicula.
+                </p>
+              </div>
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/PixelBudda.png" alt=""></div>
+                <p class="talking-about-fork__description-box-review">
+                  Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
+                  Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+                </p>
+              </div>
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/CreativeBlog.png" alt=""></div>
+                <p class="talking-about-fork__description-box-review">
+                  Praesent ut eros tristique, malesuada lectus vel, lobortis massa.
+                  Nulla faucibus lorem id arcu consequat faucibus.
+                </p>
+              </div>
+              <div class="talking-about-fork__box-review">
+                <div class="talking-about-fork__logo-box-review"><img src="img/mainBoxImages/MainBoxLogos/TNW.png" alt=""></div>
+                <p class="talking-about-fork__description-box-review">
+                  Fusce pharetra erat id odio blandit, nec pharetra eros venenatis.
+                  Pellentesque porttitor cursus massa et vestibulum.
+                </p>
+              </div>
             </div>
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/Codrops.png" alt=""></div>
-              <p class="box-review__description">Donec euismod dolor ut ultricies consequat.
-                Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
-              </p>
-            </div>
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/W.png" alt=""></div>
-              <p class="box-review__description">In efficitur in velit et tempus. Duis nec
-                odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus
-                auctor felis ac vehicula.
-              </p>
-            </div>
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/PixelBudda.png" alt=""></div>
-              <p class="box-review__description">
-                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet.
-                Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
-              </p>
-            </div>
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/CreativeBlog.png" alt=""></div>
-              <p class="box-review__description">
-                Praesent ut eros tristique, malesuada lectus vel, lobortis massa.
-                Nulla faucibus lorem id arcu consequat faucibus.
-              </p>
-            </div>
-            <div class="review__box box-review">
-              <div class="box-review__logo"><img src="img/mainBoxImages/MainBoxLogos/TNW.png" alt=""></div>
-              <p class="box-review__description">
-                Fusce pharetra erat id odio blandit, nec pharetra eros venenatis.
-                Pellentesque porttitor cursus massa et vestibulum.
-              </p>
-            </div>
+
+            <p class="talking-about-fork__paragraph-between-boxes">
+              Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+              facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit
+              eu libero tincidunt consequat nec elementum orci. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
           </div>
-          <p class="paragraph-between-boxes">
-            Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
-            facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit
-            eu libero tincidunt consequat nec elementum orci. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </div>
-        </div>
+        </section>
+
+        <!-- Fork Subscription Pricing -->
         <section class="price">
           <h3>Fork Subscription Pricing</h3>
           <div class="price-box">
@@ -326,5 +337,8 @@
 
       <footer></footer>
     </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

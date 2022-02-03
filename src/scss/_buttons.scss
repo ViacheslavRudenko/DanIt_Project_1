@@ -29,7 +29,17 @@
   }
 }
 
-.header-btn {
+//.header-btn {
+//  @extend %btn;
+//  background-color: #8D81AC;
+//  border: 2px solid transparent;
+//  border-radius: 40px;
+//  font-weight: bold;
+//  line-height: 0;
+//  box-sizing: border-box;
+//}
+
+.basic-btn{
   @extend %btn;
   background-color: #8D81AC;
   border: 2px solid transparent;
@@ -37,9 +47,6 @@
   font-weight: bold;
   line-height: 0;
   box-sizing: border-box;
-}
-
-.buy-now{
   font-size: 15px;
   padding: 12px 20px;
 }

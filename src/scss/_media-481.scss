@@ -13,7 +13,7 @@
       }
     }
 
-    &__logo__text {
+    &__logo-text {
       display: inline-block;
     }
 
@@ -29,7 +29,7 @@
     }
 
     &__download {
-      bottom: 34px;
+      bottom: -75px;
 
       & > p {
         margin-top: 28px;
@@ -82,6 +82,13 @@
       }
     }
   }
+  .download-btn{
+    font-size: 21px!important;
+  }
+
+  .menu-btn{
+    display: none;
+  }
 
   //--------------------Main--------------------//
   //---------------Revolutionary editor-----------//
@@ -122,9 +129,9 @@
   //----------People Are Talking About Fork------//
   .talking-about-fork__title {
     font-size: 42px;
-    padding-top: 80px;
+    padding: 87px 0;
   }
-  .paragraph-between-boxes:after{
+  .talking-about-fork__paragraph-between-boxes:after{
     max-width: 60%;
   }
 

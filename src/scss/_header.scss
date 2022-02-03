@@ -3,16 +3,13 @@
 
 .header {
   font-family: $fontMontserrat;
-
-  &__container {
     position: relative;
     background-color: black;
     background-image: url("../img/header/header-backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 auto;
-  }
+    margin: 0 auto 125px;
 
   &-background__container {
     background-image: url("../img/header/header-backgroung.jpg");
@@ -39,7 +36,7 @@
       background: url('../img/logos/header-logo-sprites.png') -73px -10px;
     }
 
-    &__text {
+    &-text {
       display: none;
       font-family: $fontLato;
       font-weight: bold;
@@ -82,12 +79,16 @@
   &__download {
     position: relative;
     text-align: center;
-    bottom: 28px;
+    bottom: -55px;
 
     &> p {
       margin: 13px 0 28px 0;
       text-align: center;
     }
+  }
+
+  &__secondary-text{
+    color: #848E97;
   }
 }
 
