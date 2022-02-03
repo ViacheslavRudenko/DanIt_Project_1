@@ -1,4 +1,5 @@
 @media screen and (min-width: 993px) {
+  @import "mixins";
   //--------------------HEADER--------------------//
 
   .header {
@@ -19,7 +20,7 @@
       & .header__logo__text {
         color: white;
         text-decoration: none;
-        transition: all .5s;
+        transition: all 0.5s;
       }
     }
 
@@ -27,7 +28,7 @@
       background-color: white;
       color: #8d81ac;
       border: 2px solid #8d81ac;
-      transition: all .5s;
+      transition: all 0.5s;
     }
 
     .buy-now {
@@ -50,21 +51,26 @@
 
     &__link {
       &:hover {
-        transition: all .5s;
+        transition: all 0.5s;
       }
     }
   }
   //--------------------Main--------------------//
   //---------------Revolutionary editor-----------//
-
-  .review p {
-    max-width: 860px;
-    margin: 0 auto;
+  .review {
+    &__title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+    &__text {
+      max-width: 860px;
+      margin: 0 auto;
+    }
   }
 
   .advantages {
     background: $advantagesBackground;
-    .advantages-box {
+    &__box {
       margin: 0 auto;
       max-width: 1260px;
       display: grid;
@@ -74,18 +80,19 @@
       grid-template-areas:
         "content title"
         "content img";
-      h4 {
-        text-align: left;
-        grid-area: title;
-      }
-      .advantages-box-content {
-        grid-area: content;
-        .advantages-box-item {
-          padding: 25px 0;
-          &:first-of-type {
-            padding-top: 0;
-          }
-        }
+    }
+    &__title {
+      @include pc-font-title;
+      text-align: left;
+      grid-area: title;
+    }
+    &-content {
+      grid-area: content;
+    }
+    &-item {
+      padding: 25px 0;
+      &:first-of-type {
+        padding-top: 0;
       }
     }
     &__img {
@@ -109,8 +116,14 @@
   }
 
   //---------Fork Subscription Pricing-------------//
-  .price-box {
-    min-width: 1150px;
-    margin: 0 auto;
+  .price {
+    &__title {
+      @include pc-font-title;
+    }
+    &-box {
+      max-width: 1150px;
+      grid-template-rows: 1fr;
+      align-items: center;
+    }
   }
 }

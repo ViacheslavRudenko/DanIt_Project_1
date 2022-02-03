@@ -7,11 +7,9 @@ main {
 ///Revolutionary editor
 .review {
   text-align: center;
-  width: 100vw;
   padding-bottom: 70px;
   @include contentPading;
-
-  h2 {
+  &__title {
     padding: 50px 0 25px;
     font-weight: bold;
     font-size: 26px;
@@ -19,7 +17,7 @@ main {
     color: #635c73;
     text-transform: uppercase;
   }
-  p {
+  &__text {
     color: $mainColor;
   }
   &-box {
@@ -27,29 +25,29 @@ main {
     padding: 36px 0 0;
     max-width: 265px;
     @include flex;
-    &-item {
+  }
+  &-item {
+    display: flex;
+    padding: 10px 5px;
+    &__btn {
+      @include review-border;
+      background: #e5e5e5;
+      font-weight: bold;
+      padding-bottom: 4px;
       display: flex;
-      padding: 10px 5px;
-      &__btn {
-        @include review-border;
-        background: #e5e5e5;
-        font-weight: bold;
-        padding-bottom: 4px;
-        display: flex;
-        padding: 6px 10px 4px 4px;
-        border-radius: 3px 0 0 3px;
-        svg {
-          width: 100%;
-          padding: 0 5px 0 8px;
-        }
+      padding: 6px 10px 4px 4px;
+      border-radius: 3px 0 0 3px;
+      svg {
+        width: 100%;
+        padding: 0 5px 0 8px;
       }
-      &__calc {
-        @include review-border;
-        border-left: none;
-        padding: 5px;
-        font-size: 12px;
-        border-radius: 0 3px 3px 0;
-      }
+    }
+    &__calc {
+      @include review-border;
+      border-left: none;
+      padding: 5px;
+      font-size: 12px;
+      border-radius: 0 3px 3px 0;
     }
   }
 }
@@ -61,28 +59,28 @@ main {
   padding: 94px 0 33px;
   @include contentPading;
   text-align: center;
-  &-box {
+  &__box {
     h4 {
       font-weight: bold;
       font-size: 42px;
       line-height: 44px;
       color: #8d81ac;
     }
-    &-item {
-      padding: 30px 0;
-      &__content {
-        h6 {
-          font-size: 16px;
-          padding-bottom: 14px;
-          color: $mainColor;
-        }
-        p {
-          color: #848e97;
-        }
+  }
+  &-item {
+    padding: 30px 0;
+    &__content {
+      h6 {
+        font-size: 16px;
+        padding-bottom: 14px;
+        color: $mainColor;
       }
-      &__img {
-        padding-bottom: 26px;
+      p {
+        color: #848e97;
       }
+    }
+    &__img {
+      padding-bottom: 26px;
     }
   }
   &__img {

@@ -94,24 +94,23 @@
       font-size: 21px;
       line-height: 32px;
     }
-    .review-box {
+    &__box {
       max-width: 400px;
     }
   }
   .advantages {
-    .advantages-box {
-      h4 {
-        @include pc-font-title;
-      }
-      .advantages-box-item {
-        display: grid;
-        grid-template-columns: 140px 1fr;
-        &__content {
-          text-align: left;
-          padding-left: 25px;
-        }
+    &__title {
+      @include medium-font-title;
+    }
+    &-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      &__content {
+        text-align: left;
+        padding-left: 25px;
       }
     }
+
     &__img {
       margin-left: 0;
       min-height: 520px;
@@ -124,30 +123,27 @@
     font-size: 42px;
     padding-top: 80px;
   }
-  .paragraph-between-boxes:after{
+  .paragraph-between-boxes:after {
     max-width: 60%;
   }
 
   //---------Fork Subscription Pricing-------------//
   .price {
     padding-bottom: 94px;
-    h3 {
-      font-size: 48px;
-      line-height: 50px;
+    &__title {
+      @include medium-font-title;
     }
-    &-box {
-      width: 600px;
-      margin: 0 auto;
+    &__box {
+      grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+      grid-template-rows: 460px 1fr;
+      justify-items: end;
       align-items: center;
-      justify-content: flex-end;
-      &-item {
-        &:nth-of-type(2n + 1) {
-          margin-right: 25px;
-        }
+      max-width: 600px;
+      margin: 0 auto;
+
+      &__title {
+        padding-bottom: 94px;
       }
-    }
-    h3 {
-      padding-bottom: 94px;
     }
   }
 }
