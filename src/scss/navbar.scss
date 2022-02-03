@@ -37,10 +37,20 @@
     width: 100%;
     height: 100%;
 
-    &:hover{
-      text-decoration: none;
-      color: #FFFFFF;
-    }
+      &:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          border-top: 53px solid #8D81AC;
+          width: 8px;
+          left: 2px;
+          top: 10px;
+        }
+      }
 
     &:visited{
       outline: none;
@@ -49,16 +59,6 @@
     &:focus {
       color: #8D81AC;
       position: relative;
-
-      &::before{
-        display: block;
-        position: absolute;
-        content: '';
-        border-top: 53px solid #8D81AC;
-        width: 8px;
-        left: -35px;
-        top: -11px;
-      }
     }
   }
 }
@@ -66,3 +66,4 @@
 .hide{
   display: none;
 }
+
