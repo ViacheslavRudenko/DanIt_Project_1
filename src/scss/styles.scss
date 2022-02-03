@@ -1,4 +1,5 @@
 @import "reset";
+@import "mixins";
 html,
 body,
 .wrapper {
@@ -13,13 +14,14 @@ body,
 .width-container {
   max-width: $container-max-widths;
   margin: 0 auto;
-  padding: 0 10px;
+  @include contentPading;
   box-sizing: border-box;
 }
 
 @import "header";
-@import "buttons";
+
 @import "navbar";
+@import "buttons";
 @import "mixins";
 @import "main-review";
 @import "talking-about-fork";

@@ -8,6 +8,10 @@
       padding: 30px 16px;
     }
 
+    &__download {
+      bottom: -83px;
+    }
+
     &__logo:hover {
       cursor: pointer;
 
@@ -17,23 +21,29 @@
         transition: 0.5s;
       }
 
-      & .header__logo__text {
+      & .header__logo-text {
         color: white;
         text-decoration: none;
         transition: all 0.5s;
       }
     }
 
-    &-btn:hover {
-      background-color: white;
-      color: #8d81ac;
-      border: 2px solid #8d81ac;
-      transition: all 0.5s;
-    }
+    //&-btn:hover {
+    //  background-color: white;
+    //  color: #8d81ac;
+    //  border: 2px solid #8d81ac;
+    //  transition: all .5s;
+    //}
 
-    .buy-now {
+    .basic-btn {
       font-size: 16px;
       line-height: 16px;
+      &:hover {
+        background-color: white;
+        color: #8d81ac;
+        border: 2px solid #8d81ac;
+        transition: all 0.5s;
+      }
     }
   }
 
@@ -104,7 +114,7 @@
   }
   //------------------talking about fork----------//
   .talking-about-fork__title {
-    padding-top: 110px;
+    padding: 108px 0 82px;
     font-size: 48px;
   }
   .talking-about-fork__review {
