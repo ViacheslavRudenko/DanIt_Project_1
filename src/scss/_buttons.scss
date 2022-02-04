@@ -17,31 +17,11 @@
 
 //--------------------HEADER--------------------//
 
-.header__bar__btn-bars{
-  color: white;
-  font-size: 21px;
-  background: none;
-  border: none;
-  width: 28px;
-
-  &:focus{
-    outline: none;
-  }
-}
-
-//.header-btn {
-//  @extend %btn;
-//  background-color: #8D81AC;
-//  border: 2px solid transparent;
-//  border-radius: 40px;
-//  font-weight: bold;
-//  line-height: 0;
-//  box-sizing: border-box;
-//}
-
 .basic-btn{
   @extend %btn;
   background-color: #8D81AC;
+  height: 37px;
+  width: 119px;
   border: 2px solid transparent;
   border-radius: 40px;
   font-weight: bold;
@@ -52,6 +32,8 @@
 }
 
 .download-btn{
+  height: 45px;
+  width: 290px;
   font-size: 18px;
   padding: 24px 29px;
 }

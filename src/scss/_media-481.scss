@@ -37,7 +37,13 @@
     }
   }
 
+  .basic-btn{
+    width: 145px;
+  }
+
   .download-btn {
+    height: 62px;
+    width: 390px;
     font-size: 21px;
     padding: 31px 61px;
   }
@@ -72,13 +78,13 @@
       text-align: center;
       border: none;
 
+      &::before {
+        display: none;
+      }
+
       &:focus {
         color: white;
-        border: none;
-
-        &::before {
-          display: none;
-        }
+        outline: none;
       }
     }
   }
