@@ -1,11 +1,9 @@
 @import "variables";
 @import "mixins";
 
-main {
-  @include lato-font;
-}
 ///Revolutionary editor
 .review {
+  @include lato-font;
   text-align: center;
   padding-bottom: 70px;
   &__title {
@@ -19,41 +17,18 @@ main {
   &__text {
     color: $mainColor;
   }
-  &-box {
+  &__box {
     margin: 0 auto;
     padding: 36px 0 0;
     max-width: 265px;
     @include flex;
-  }
-  &-item {
-    display: flex;
-    padding: 10px 5px;
-    &__btn {
-      @include review-border;
-      background: #e5e5e5;
-      font-weight: bold;
-      padding-bottom: 4px;
-      display: flex;
-      padding: 6px 10px 4px 4px;
-      border-radius: 3px 0 0 3px;
-      svg {
-        width: 100%;
-        padding: 0 5px 0 8px;
-      }
-    }
-    &__calc {
-      @include review-border;
-      border-left: none;
-      padding: 5px;
-      font-size: 12px;
-      border-radius: 0 3px 3px 0;
-    }
   }
 }
 
 ///Advantages
 //<Here is what you get>
 .advantages {
+  @include montserrat-font;
   position: relative;
   padding: 94px 0 33px;
   text-align: center;

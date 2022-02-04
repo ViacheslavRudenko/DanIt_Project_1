@@ -14,6 +14,13 @@
   font-size: 14px;
   line-height: 20px;
 }
+@mixin montserrat-font {
+  font-family: $fontMontserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
 @mixin review-border {
   border: 1px solid #d5d5d5;
 }
