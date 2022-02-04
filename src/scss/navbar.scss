@@ -37,19 +37,23 @@
     width: 100%;
     height: 100%;
 
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      border: transparent;
+      height: 53px;
+      width: 8px;
+      left: 102px;
+      top: 10px;
+      background: transparent;
+    }
+
       &:hover {
         text-decoration: none;
         color: #FFFFFF;
 
-        &::before {
-          display: block;
-          position: absolute;
-          content: '';
-          border-top: 53px solid #8D81AC;
-          width: 8px;
-          left: 2px;
-          top: 10px;
-        }
+
       }
 
     &:visited{
@@ -59,6 +63,15 @@
     &:focus {
       color: #8D81AC;
       position: relative;
+
+      &:before {
+
+        border: 1px solid #8D81AC;
+        box-sizing: border-box;
+        background-color: #8D81AC;
+        transition: all .4s ease-in-out;
+        transform: translateX(-100px);
+      }
     }
   }
 }
