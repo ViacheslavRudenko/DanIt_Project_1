@@ -43,6 +43,15 @@
       line-height: 16px;
       text-transform: uppercase;
       padding-bottom: 73px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #8d81ac;
+        width: 60px;
+        bottom: 30px;
+        right: calc(50% - 30px);
+      }
     }
     &__advantages {
       font-size: 16px;
@@ -59,6 +68,12 @@
       background-color: #473249;
       h6 {
         background-color: #3f2d41;
+      }
+      .peroid--big {
+        padding-bottom: 91px;
+        &::after {
+          bottom: 40px;
+        }
       }
     }
   }
