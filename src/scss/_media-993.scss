@@ -9,10 +9,6 @@
       padding: 30px 16px;
     }
 
-    &__download {
-      bottom: -83px;
-    }
-
     &__logo:hover {
       cursor: pointer;
 
@@ -29,16 +25,10 @@
       }
     }
 
-    //&-btn:hover {
-    //  background-color: white;
-    //  color: #8d81ac;
-    //  border: 2px solid #8d81ac;
-    //  transition: all .5s;
-    //}
-
     .basic-btn {
       font-size: 16px;
       line-height: 16px;
+
       &:hover {
         background-color: white;
         color: #8d81ac;

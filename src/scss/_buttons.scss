@@ -1,6 +1,9 @@
 %btn {
   color: white;
   position: relative;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  box-sizing: border-box;
 
   &:focus {
     outline: none;
@@ -24,11 +27,7 @@
   background-color: #8d81ac;
   height: 37px;
   width: 119px;
-  border: 2px solid transparent;
-  border-radius: 40px;
   font-weight: bold;
-  //line-height: 0;
-  box-sizing: border-box;
   font-size: 15px;
   padding: 7px 20px;
 }
@@ -67,11 +66,9 @@
 
 //Price
 .price-btn {
+  @extend %btn;
   background-color: #84717b;
-  border: none;
-  border-radius: 50px;
   padding: 15px 37px;
-  color: #ffffff;
   font-size: 15px;
   line-height: 15px;
   text-transform: uppercase;
